@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Nunito:wght@400;500;600;700;800;900;1000&display=swap");
+
+* {
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+
+  background-color: transparent;
+
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+:root {
+
+  --beige: #f8f0e7;
+  --brown: #773b15;
+}
+
+ul,
+li {
+
+  list-style: none;
+}
+
+body {
+
+  font-family: "Nunito";
+}
+
+button,
+input[type="submit"] {
+
+  cursor: pointer;
+}
+
+/******************* NAVIGATION WEB **********************/
+
+.mobile-nav {
+
+  display: none;
+}
+
+nav {
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: auto;
+  padding: 1em 90px;
+  background-color: white;
+
+  color: var(--brown);
+}
+
+.nav-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+
+  font-family: "Atomic Age", cursive;
+  font-size: 3em;
+}
+
+.nav-links {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+
+  gap: 2em;
+}
+
+/***************** HERO ****************/
+
+.image-container {
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  height: 70vh;
+}
+
+/******************  ABOUT SECTION  ************/
+
+.about {
+
+  width: 100%;
+  height: auto;
+  margin-top: 10vh;
+
+  color: var(--brown);
+}
+
+.about-container {
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.about-container h1 {
+
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.about-container p {
+
+  padding: 1em 15%;
+
+  font-size: 20px;
+
+  letter-spacing: 1px;
+}
+
+.about-btn {
+
+  margin-top: 2em;
+}
+
+.about-btn button {
+
+  padding: 1em 4em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--brown);
+
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: white;
+}
+
+.about-btn button:hover {
+
+  background-color: var(--beige);
+
+  transition: all 0.3s;
+}
+
+/************************ PRODUCTS SECTION *******************/
+
+.products {
+
+  margin-bottom: 20vh;
+}
+
+.products-container {
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 15vh;
+  padding: 5em 200px;
+  background-color: #f3e9e1;
+
+  color: var(--brown);
+}
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item img {
+
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+  object-position: 0 -100px;
+}
+
+.grid-item img.big-img {
+
+  object-position: 0 -400px;
+}
+
+.grid-text {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 5vh;
+
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.grid-text h3 {
+
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.grid-text p {
+
+  width: 70%;
+  margin-top: 3vh;
+
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(46, 46, 46);
+}
+
+.grid-text span {
+
+  font-weight: bolder;
+}
+
+/***************************** SELLING SECTION *********************/
+.selling {
+
+  height: 100vh;
+  margin-top: 10vh;
+  padding: 1em 0px;
+
+  color: var(--brown);
+}
+
+.selling-container {
+
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.selling-wrapper {
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  width: 100%;
+  height: 80vh;
+  padding: 10vh 200px;
+
+  gap: 2em;
+}
+
+.selling-text,
+.selling-img {
+
+  flex: 1;
+}
+
+.selling-h1 {
+
+  padding-bottom: 3vh;
+
+  font-size: 2.6em;
+  font-weight: 800;
+}
+
+.selling-container p {
+
+  width: 100%;
+
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+
+  letter-spacing: 1px;
+}
+
+.selling-wrapper img {
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: 0 -500px;
+}
+
+/************************* CONTACT  ********************/
+
+.contact {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vh;
+  padding: 5em 200px;
+  padding-bottom: 5vh;
+  background-color: #f3e9e1;
+
+  color: var(--brown);
+
+  overflow: hidden;
+}
+
+
+.form-text {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+
+  text-align: center;
+
+  gap: 2rem;
+}
+
+.form-text h2 {
+
+  font-size: 2.5em;
+  font-weight: 800;
+  color: rgb(68, 38, 14);
+}
+
+.form-text p {
+
+  font-size: 1.2em;
+  font-weight: 600;
+  color: rgb(46, 25, 8);
+}
+
+.contact form {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 2em 0px;
+}
+
+form h2 {
+
+  padding: 0.5em 0;
+
+  font-size: 2.5em;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.form {
+
+  display: flex;
+  justify-content: center;
+
+  width: 40%;
+}
+
+.form-container {
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+
+  padding: 0.8em;
+  border: 1px solid rgb(112, 112, 112);
+  border-radius: 5px;
+  background-color: var(--beige);
+}
+
+.form-container label {
+
+  font-weight: 600;
+  color: rgb(46, 25, 8);
+}
+
+.form-btn-container {
+
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn {
+
+  margin-top: 3vh;
+  padding: 0.5em 2em;
+  border: none;
+  border-color: white;
+  border-radius: 5px;
+  background-color: rgb(211, 183, 165);
+
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--brown);
+}
+
+.form-btn:hover {
+
+  background-color: var(--brown);
+
+  color: white;
+
+  transition: all 0.3s;
+}
+
+/******************************* FOOTER ************************/
+
+footer {
+
+  width: 100%;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  background-color: var(--brown);
+
+  color: white;
+}
+
+.footer-container {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5%;
+  padding-top: 5vh;
+
+  font-size: 1em;
+
+  gap: 15em;
+}
+
+.address {
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.1em;
+
+  gap: 1vh;
+}
+
+
+.contacts {
+	display: flex;
+	font-size: 1.1em;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.fa-solid,
+.fa-regular {
+
+  padding-right: 1vw;
+}
+
+.some {
+
+  display: flex;
+
+  font-size: 2em;
+
+  gap: 2vw;
+}
