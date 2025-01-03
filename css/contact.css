@@ -1,0 +1,40 @@
+main {
+    margin-top: 20vh;
+}
+
+.contact {
+    color: var(--brown);
+    width: 100%;
+    height: auto;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 200px;
+}
+
+.contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
