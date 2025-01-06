@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Nunito:wght@400;500;600;700;800;900;1000&display=swap");
 
 * {
-
   margin: 0;
   padding: 0;
 
@@ -10,7 +9,6 @@
 }
 
 a {
-
   background-color: transparent;
 
   text-decoration: none;
@@ -20,37 +18,31 @@ a {
 }
 
 :root {
-
   --beige: #f8f0e7;
   --brown: #773b15;
 }
 
 ul,
 li {
-
   list-style: none;
 }
 
 body {
-
   font-family: "Nunito";
 }
 
 button,
 input[type="submit"] {
-
   cursor: pointer;
 }
 
 /******************* NAVIGATION WEB **********************/
 
 .mobile-nav {
-
   display: none;
 }
 
 nav {
-
   position: fixed;
   top: 0;
   z-index: 100;
@@ -64,20 +56,17 @@ nav {
 }
 
 .nav-container {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .logo {
-
   font-family: "Atomic Age", cursive;
   font-size: 3em;
 }
 
 .nav-links {
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,26 +91,30 @@ nav {
 
 .image-container {
   position: relative;
+
   width: 100%;
   height: 70vh;
+
   overflow: hidden;
 }
 
 .image-container video {
   position: absolute;
-  top: 50%;
   left: 50%;
+  top: 50%;
+  z-index: -1;
+
   width: 100%;
   height: 100%;
-  object-fit: cover;
+
   transform: translate(-50%, -50%);
-  z-index: -1;
+
+  object-fit: cover;
 }
 
 /******************  ABOUT SECTION  ************/
 
 .about {
-
   width: 100%;
   height: auto;
   margin-top: 5vh;
@@ -130,7 +123,6 @@ nav {
 }
 
 .about-container {
-
   display: flex;
   flex-direction: column;
 
@@ -138,27 +130,24 @@ nav {
 }
 
 .about-container h1 {
-
   font-size: 3em;
   font-weight: 900;
 }
 
 .about-container p {
-
   padding: 1em 15%;
 
   font-size: 20px;
+
 
   letter-spacing: 1px;
 }
 
 .about-btn {
-
   margin-top: 2em;
 }
 
 .about-btn button {
-
   padding: 1em 4em;
   border: none;
   border-radius: 5px;
@@ -170,21 +159,20 @@ nav {
 }
 
 .about-btn button:hover {
-
   background-color: var(--beige);
-color: #773b15;
+
+  color: #773b15;
+
   transition: all 0.3s;
 }
 
-/************************ PRODUCTS SECTION *******************/
+/************************ INFO SECTION *******************/
 
-.products {
-
+.info {
   margin-bottom: 20vh;
 }
 
-.products-container {
-
+.info-container {
   display: flex;
   flex-direction: column;
 
@@ -196,27 +184,22 @@ color: #773b15;
 }
 
 .grid-container {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-item img {
-
   width: 100%;
   height: 250px;
 
   object-fit: cover;
-
 }
 
 .grid-item img.big-img {
-
   object-position: 0 -400px;
 }
 
 .grid-text {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,13 +211,11 @@ color: #773b15;
 }
 
 .grid-text h3 {
-
   font-size: 1.5em;
   font-weight: 800;
 }
 
 .grid-text p {
-
   width: 70%;
   margin-top: 3vh;
 
@@ -244,8 +225,90 @@ color: #773b15;
 }
 
 .grid-text span {
-
   font-weight: bolder;
+}
+
+/***************** TUOTTEET  *************/
+
+.products {
+  padding: 5vh 200px;
+  background-color: #f3e9e1;
+
+  text-align: left;
+  color: var(--brown);
+}
+
+.products h2 {
+  font-size: 2em;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 5vh;
+
+  gap: 2em;
+}
+
+.product-card {
+  display: flex;
+  flex: 1 1 300px;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 300px;
+  height: 420px;
+  padding: 2em 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+
+  gap: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.product-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.product-info h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.product-info p {
+  font-size: 1em;
+  color: #333;
+}
+
+.product-info .price {
+  display: block;
+
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.moreProducts{
+  margin-top: 5vh;
+  font-size: 1.25rem;
 }
 
 /***************************** SELLING SECTION *********************/
@@ -253,24 +316,28 @@ color: #773b15;
   height: auto;
   margin-top: 10vh;
   padding: 1em 0px;
+
   color: var(--brown);
 }
 
 .selling-container {
-  width: 100%;
-  margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
+  margin-bottom: 10vh;
 }
 
 .selling-wrapper {
   display: flex;
   flex: 1;
   justify-content: center;
+
   width: 100%;
   padding: 10vh 200px;
+
   gap: 2em;
 }
 
@@ -281,21 +348,25 @@ color: #773b15;
 
 .selling-h1 {
   padding-bottom: 3vh;
+
   font-size: 2.6em;
   font-weight: 800;
 }
 
 .selling-container p {
   width: 100%;
+
   font-size: 1.2em;
   font-weight: 500;
   color: rgb(20, 20, 20);
+
   letter-spacing: 1px;
 }
 
 .selling-wrapper img {
   width: 100%;
   height: 450px;
+
   object-fit: cover;
   object-position: 0 -500px;
 }
@@ -303,17 +374,19 @@ color: #773b15;
 .selling-dealers {
   width: 100%;
   max-width: 1200px;
+  margin-top: 40px;
   padding: 20px;
   background-color: #fff;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
 }
 
 .selling-dealers h2 {
-  text-align: center;
-  font-size: 2rem;
-  color: #333;
   margin-bottom: 20px;
+
+  font-size: 2rem;
+  text-align: center;
+  color: var(--brown);
 }
 
 table {
@@ -321,14 +394,17 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
-  text-align: left;
   border-bottom: 1px solid #ddd;
+
+  text-align: left;
 }
 
 th {
   background-color: #773b15;
+
   color: white;
 }
 
@@ -336,15 +412,48 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-tr:hover {
-  background-color: #f1f1f1;
+.join-btn {
+  letter-spacing: 1.25px;
+  margin-top: 5vh;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--brown);
+
+  font-size: 1.1em;
+  font-weight: bolder;
+  color: white;
+}
+
+.join-btn:hover {
+  background-color: var(--beige);
+
+  color: #773b15;
+
+  transition: all 0.3s;
+}
+
+p a b{
+ 
+  color: #773b15;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease; 
+  border-bottom: 2px solid transparent;
+}
+
+p a b:hover {
+  color: #311707; 
+  text-decoration: none;
+}
+
+.link{
+  margin-top: 5vh;
 }
 
 
 /************************* CONTACT  ********************/
 
 .contact {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,9 +473,7 @@ tr:hover {
   overflow: hidden;
 }
 
-
 .form-text {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,21 +487,18 @@ tr:hover {
 }
 
 .form-text h2 {
-
   font-size: 2.5em;
   font-weight: 800;
-  color: rgb(68, 38, 14);
+  color: var(--brown);
 }
 
 .form-text p {
-
   font-size: 1.2em;
   font-weight: 600;
-  color: rgb(46, 25, 8);
+  color: rgb(20, 20, 20);
 }
 
 .contact form {
-
   display: flex;
   flex-direction: column;
 
@@ -403,7 +507,6 @@ tr:hover {
 }
 
 form h2 {
-
   padding: 0.5em 0;
 
   font-size: 2.5em;
@@ -413,7 +516,6 @@ form h2 {
 }
 
 .form {
-
   display: flex;
   justify-content: center;
 
@@ -421,7 +523,6 @@ form h2 {
 }
 
 .form-container {
-
   display: flex;
   flex-direction: column;
 
@@ -431,7 +532,6 @@ form h2 {
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container textarea {
-
   padding: 0.8em;
   border: 1px solid rgb(112, 112, 112);
   border-radius: 5px;
@@ -439,36 +539,32 @@ form h2 {
 }
 
 .form-container label {
-
   font-weight: 600;
   color: rgb(46, 25, 8);
 }
 
 .form-btn-container {
-
   display: flex;
   justify-content: center;
 }
 
 .form-btn {
-
   margin-top: 3vh;
   padding: 0.5em 2em;
   border: none;
   border-color: white;
   border-radius: 5px;
-  background-color: rgb(211, 183, 165);
+  background-color: var(--brown);
 
   font-size: 1.1em;
   font-weight: 700;
-  color: var(--brown);
+  color: white;
 }
 
 .form-btn:hover {
+  background-color: var(--beige);
 
-  background-color: var(--brown);
-
-  color: white;
+  color: #773b15;
 
   transition: all 0.3s;
 }
@@ -476,17 +572,15 @@ form h2 {
 /******************************* FOOTER ************************/
 
 footer {
-
   width: 100%;
   padding-bottom: 2vh;
   padding-top: 2vh;
-  background-color: var(--brown);
+  background-color: rgb(75, 36, 14);
 
   color: white;
 }
 
 .footer-container {
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -501,7 +595,6 @@ footer {
 }
 
 .address {
-
   display: flex;
   flex-direction: column;
 
@@ -510,22 +603,21 @@ footer {
   gap: 1vh;
 }
 
-
 .contacts {
-	display: flex;
-	font-size: 1.1em;
-	flex-direction: column;
-	gap: 2vh;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.1em;
+
+  gap: 2vh;
 }
 
 .fa-solid,
 .fa-regular {
-
   padding-right: 1vw;
 }
 
 .some {
-
   display: flex;
 
   font-size: 2em;
