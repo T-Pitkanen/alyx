@@ -310,7 +310,7 @@ nav {
   color: #e74c3c;
 }
 
-.moreProducts{
+.moreProducts {
   margin-top: 5vh;
   font-size: 1.25rem;
 }
@@ -437,20 +437,20 @@ tr:nth-child(even) {
   transition: all 0.3s;
 }
 
-p a b{
- 
+p a b {
+
   color: #773b15;
   font-weight: bold;
-  transition: color 0.3s ease, border-bottom 0.3s ease; 
+  transition: color 0.3s ease, border-bottom 0.3s ease;
   border-bottom: 2px solid transparent;
 }
 
 p a b:hover {
-  color: #311707; 
+  color: #311707;
   text-decoration: none;
 }
 
-.link{
+.link {
   margin-top: 5vh;
 }
 
