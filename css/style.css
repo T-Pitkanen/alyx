@@ -169,18 +169,22 @@ nav {
 /************************ INFO SECTION *******************/
 
 .info {
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
 
-  margin-top: 15vh;
+  margin-top: 10vh;
   padding: 5em 200px;
   background-color: #f3e9e1;
 
   color: var(--brown);
+}
+
+.mobile-hr {
+  display: none;
 }
 
 .grid-container {
