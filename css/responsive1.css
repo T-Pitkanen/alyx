@@ -43,15 +43,19 @@
 
   .products {
     padding: 2em 50px;
+    text-align: center;
   }
 
   .products-container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 3em;
   }
 
   .product-card {
-    height: auto;
+    height: 350px;
   }
 
   .selling-wrapper {
