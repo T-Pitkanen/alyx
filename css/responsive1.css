@@ -1,8 +1,6 @@
 /* LAPTOP */
 
-@media (min-width: 1200px) and (max-width: 1400px) {
-
-
+@media (min-width: 1024px) and (max-width: 1400px) {
   .grid-item img.big-img {
     object-position: 0 -200px;
   }
@@ -12,7 +10,6 @@
     text-align: center;
     margin-top: 20vh;
   }
-
 
   .product-card {
     display: flex;
@@ -29,7 +26,6 @@
     gap: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
 
   /* SELLING */
 
@@ -61,19 +57,15 @@
 
   /* FOOTER */
 
-
   .contacts p,
   .address p {
-
     display: flex;
     flex-direction: row;
   }
-
-
 }
 
 /* TABLETS */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   nav {
     padding: 1em 30px;
   }
@@ -106,15 +98,47 @@
     padding: 2em 50px;
   }
 
+  /* GRID */
+
+  .mobile-hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    background: #382b2b;
+    margin: 10px 0;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     gap: 2em;
+  }
+
+  .grid-text {
+    padding-top: 0vh;
   }
 
   .grid-text p {
     font-size: 1em;
   }
 
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .grid-item img {
+    width: 350px;
+  }
+
+  .grid-item img.big-img {
+    object-position: 0 -200px;
+  }
+
+  .link {
+    margin-top: 0vh;
+  }
   .products {
     padding: 2em 50px;
     text-align: center;
@@ -157,7 +181,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .bigger-screens-nav {
     display: none;
   }
@@ -229,15 +253,15 @@
     display: none;
   }
 
-  .menu-toggle:checked~.mobile-nav-links {
+  .menu-toggle:checked ~ .mobile-nav-links {
     display: flex;
   }
 
-  .menu-toggle:checked+.hamburger .menu-icon {
+  .menu-toggle:checked + .hamburger .menu-icon {
     display: none;
   }
 
-  .menu-toggle:checked+.hamburger .close-icon {
+  .menu-toggle:checked + .hamburger .close-icon {
     display: inline;
   }
 
@@ -368,9 +392,6 @@
     width: 80%;
   }
 
-
-
-
   /* FOOTER */
 
   .footer-container {
@@ -386,8 +407,6 @@
     font-size: 1.5em;
   }
 }
-
-
 
 @media (max-width: 768px) {
   p a {
