@@ -88,7 +88,7 @@
   /* CONTACTS */
 
   .contact {
-    padding: 3em 0px;
+    padding: 1em 0px;
   }
 
   .contact-info h3 {
@@ -105,16 +105,87 @@
   }
 
   .map-container {
-   margin-top: 5vh;
+    margin-top: 5vh;
   }
 
- 
   /* FOOTER */
 
   .footer-container {
     gap: 1em;
     display: flex;
     flex-direction: column;
+  }
+
+  .address,
+  .contacts {
+    font-size: 0.9em;
+  }
+
+  .some {
+    font-size: 1.5em;
+    gap: 1em;
+  }
+
+  .logo {
+    font-size: 2.5em;
+  }
+}
+
+/* TABLETS >1023px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    padding: 1em 30px;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 2.5em;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 1em;
+    font-size: 1.2em;
+  }
+
+  /* CONTACTS */
+
+  .contact {
+    padding: 3em 100px;
+  }
+
+  .contact-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .contact-info {
+    width: 90%;
+  }
+
+  .contact-info p {
+    font-size: 1em;
+  }
+
+  .map-container {
+    margin-top: 5vh;
+  }
+
+  /* FOOTER */
+
+
+  footer{
+    margin-top: 18vh;
+  }
+
+  .footer-container {
+    gap: 1em;
+    display: flex;
+    /* flex-direction: column; */
   }
 
   .address,

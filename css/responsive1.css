@@ -1,14 +1,39 @@
-/* LAPTOP */
+/* LAPTOP 1024px-1400px*/
 
-@media (min-width: 1024px) and (max-width: 1400px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+
+  .nav{
+    font-size: 1em;
+   
+  }
+
+  .bigger-screens-nav{
+    padding: 1em 30px;
+  }
+
+  /* GRID */
+
+
+  .grid-text p {
+    font-size: 1em;
+  }
+
+
   .grid-item img.big-img {
     object-position: 0 -200px;
   }
 
+
+  /* PRODUCTS */
   .products {
-    padding: 2em 50px;
+    padding: 2em 30px;
     text-align: center;
     margin-top: 20vh;
+  }
+
+  .products-container{
+    gap: 1em;
   }
 
   .product-card {
@@ -18,13 +43,22 @@
     align-items: center;
     width: 100%;
     max-width: 500px;
-    height: 420px;
+    height: 400px;
     padding: 2em 1em;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: white;
     gap: 1em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+
+  .product-info{
+    flex-grow: 0.5;
+  }
+
+  .product-card img {
+   height: 40%;
   }
 
   /* SELLING */
@@ -62,10 +96,14 @@
     display: flex;
     flex-direction: row;
   }
+
+  .footer-container{
+    gap: 2em;
+  }
 }
 
-/* TABLETS */
-@media (max-width: 1023px) {
+/* TABLETS >1023px */
+@media (max-width: 1024px) {
   nav {
     padding: 1em 30px;
   }
@@ -89,8 +127,18 @@
     height: 50vh;
   }
 
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-container{
+    width: 90%;
+  }
+
   .about-container p {
-    padding: 1em 10%;
+    padding: 1em 5%;
     font-size: 18px;
   }
 
@@ -165,8 +213,18 @@
     font-size: 1em;
   }
 
+
+  .selling img{
+    object-position: 0 -650px;
+  }
+
+
   .contact {
     padding: 2em 50px;
+  }
+
+  .form-text {
+    width: 80%;
   }
 
   .form-text h2 {
@@ -180,7 +238,7 @@
   }
 }
 
-/* MOBILE */
+/* MOBILE >767px*/
 @media (max-width: 767px) {
   .bigger-screens-nav {
     display: none;
@@ -290,6 +348,20 @@
 
   .info-container {
     padding: 2em 20px;
+  }
+
+  /* ABOUT */
+
+  .about, .info, .selling{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .about-container, .info-container, .selling-container {
+    width: 90%;
+   
   }
 
   /* GRID */
